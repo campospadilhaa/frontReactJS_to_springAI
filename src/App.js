@@ -1,4 +1,9 @@
 import { useState } from 'react';
+
+import ConversandoComAI from './pages/chat/ConversandoComAI';
+import GeradorReceita from './pages/recipe/GeradorReceita';
+import GeradorImagem from './pages/image/GeradorImagem';
+
 import './App.css';
 
 function App() {
@@ -33,9 +38,9 @@ function App() {
 
       {/*reação da tela de acordo com o botão executado*/}
       <div>
-        {activeTab === 'ask-ai' && <h2>Converse com AI</h2>}
-        {activeTab === 'recipe-generator' && <h2>Geração de receitas</h2>}
-        {activeTab === 'image-generator' && <h2>Geração de imagens</h2>}
+        {activeTab === 'ask-ai' && <ConversandoComAI/>}
+        {activeTab === 'recipe-generator' && <GeradorReceita/>}
+        {activeTab === 'image-generator' && <GeradorImagem/>}
       </div>
     </div>
   );
