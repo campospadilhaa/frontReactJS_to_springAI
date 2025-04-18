@@ -1,4 +1,5 @@
-import { useState } from 'react';
+//import { useState } from 'react';
+import React, { useState }  from 'react';
 
 import ConversandoComAI from './pages/chat/ConversandoComAI';
 import GeradorReceita from './pages/recipe/GeradorReceita';
@@ -8,7 +9,7 @@ import './App.css';
 
 function App() {
 
-  {/*para transformar os botões em guias*/}
+  //para transformar os botões em guias
   const [activeTab, setActiveTab] = useState('ask-ai');
 
   const handleTabChange = (tab) => {
