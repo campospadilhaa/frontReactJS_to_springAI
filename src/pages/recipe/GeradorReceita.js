@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ReactMarkdown from "react-markdown";
 import api from "../../services/api";
 
 function GeradorReceita(){
@@ -59,13 +60,13 @@ function GeradorReceita(){
 
             <button
                 onClick={gerarReceitaAI}>
-                    Perguntar a AI
+                    Gerar receita
             </button>
 
             <div className="output">
-                <p>
+                <ReactMarkdown>
                     {receitaResponse}
-                </p>
+                </ReactMarkdown>
             </div>
         </div>
     );
